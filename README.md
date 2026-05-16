@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Reminder App (Flutter)
 
 Cross-platform reminder application for **Android** and **iOS** with real system notifications that fire even when the app is fully closed.
@@ -67,3 +68,6 @@ lib/
   screens/create_reminder_screen.dart
   screens/reminder_details_screen.dart
 ```
+=======
+# reminder_application
+>>>>>>> 47f367af08b567af77b90864166427d366d91caf
