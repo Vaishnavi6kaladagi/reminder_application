@@ -1,0 +1,17 @@
+workflows:
+  ios-simulator-workflow:
+    name: iOS Simulator Build
+    environment:
+      flutter: stable
+
+    scripts:
+      - flutter pub get
+      - |
+          xcodebuild -workspace ios/Runner.xcworkspace \
+          -scheme Runner \
+          -sdk iphonesimulator \
+          -configuration Debug \
+          -derivedDataPath build/ios_simulator
+
+    artifacts:
+      - build/ios_simulator/Build/Products/Debug-iphonesimulator/Runner.app
