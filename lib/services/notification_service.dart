@@ -125,8 +125,6 @@ class NotificationService {
       scheduledTime,
       details,
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
       payload: jsonEncode({
         'action': notificationPayloadOpenDetails,
         'message': message,
